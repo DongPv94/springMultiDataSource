@@ -1,5 +1,5 @@
 
-package com.example.demo.domain;
+package com.example.demo.domain2;
 
 import java.util.Date;
 

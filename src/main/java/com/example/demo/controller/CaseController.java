@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.repository.query.Param;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -15,7 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.domain.CaseEntity;
 import com.example.demo.repository.CaseEmRepository;
+import com.example.demo.repository.CaseRepository;
 
+@SpringBootApplication
 @CrossOrigin(origins = "http://localhost:8080/")
 @RestController
 @RequestMapping(path = "paymenthub/api/v1")
