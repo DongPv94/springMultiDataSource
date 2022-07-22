@@ -32,7 +32,7 @@ public class CaseController {
 	private CaseEmRepository caseRepo;
 
 	@GetMapping("/findAll")
-	@PreAuthorize("hasRole('STUDENT')")
+	@PreAuthorize("hasAuthority('course:read')")
 	public List<CaseEntity> hello() {
 		List<CaseEntity> listResult = new ArrayList<>();
 		try {
